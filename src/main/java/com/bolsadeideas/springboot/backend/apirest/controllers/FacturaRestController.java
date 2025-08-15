@@ -19,7 +19,7 @@ import com.bolsadeideas.springboot.backend.apirest.models.entity.Factura;
 import com.bolsadeideas.springboot.backend.apirest.models.entity.Producto;
 import com.bolsadeideas.springboot.backend.apirest.models.services.IClienteService;
 
-@CrossOrigin(origins = { "http://localhost:4200", "http://api-facturas-bucket.s3-website.us-east-2.amazonaws.com/" })
+@CrossOrigin(origins = { "http://localhost:4200", "http://api-facturas-front.s3-website.us-east-2.amazonaws.com" })
 @RestController
 @RequestMapping("/api")
 public class FacturaRestController {
