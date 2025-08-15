@@ -3,12 +3,12 @@
   "networkMode": "awsvpc",
   "cpu": "256",   
   "memory": "512", 
-  "executionRoleArn": "arn:aws:iam::041247148008:role/ecsTaskExecutionRole",
-  "taskRoleArn": "arn:aws:iam::041247148008:role/api-facturas-task-role",
+  "executionRoleArn": "arn:aws:iam::932552648067:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::932552648067:role/api-facturas-task-role",
   "containerDefinitions": [
     {
       "name": "api-facturas-container", 
-      "image": "041247148008.dkr.ecr.us-east-1.amazonaws.com/api-facturas:12f05ca", 
+      "image": "932552648067.dkr.ecr.us-east-2.amazonaws.com/api-facturas:4dfe4a4", 
       "portMappings": [
         {
           "containerPort": 8080, 
@@ -20,8 +20,8 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "/ecs/api-facturas", 
-          "awslogs-region": "us-east-1",
+          "awslogs-group": "/ecs/api-facturas",
+          "awslogs-region": "us-east-2",
           "awslogs-stream-prefix": "ecs"
         }
       }
