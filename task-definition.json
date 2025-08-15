@@ -8,7 +8,7 @@
   "containerDefinitions": [
     {
       "name": "api-facturas-container", 
-      "image": "932552648067.dkr.ecr.us-east-2.amazonaws.com/api-facturas:4dfe4a4", 
+      "image": "932552648067.dkr.ecr.us-east-2.amazonaws.com/api-facturas:lastest", 
       "portMappings": [
         {
           "containerPort": 8080, 
